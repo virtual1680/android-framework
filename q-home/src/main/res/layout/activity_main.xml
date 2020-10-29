@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.devio.hi.ui.tab.bottom.HiTabBottomLayout
+        android:id="@+id/tab_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.qwwccd.q.commom.tab.QFragmentTabView
+            android:id="@+id/fragment_tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </org.devio.hi.ui.tab.bottom.HiTabBottomLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

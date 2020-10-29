@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    app:ignore="NamespaceTypo">
+    <data>
+
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.devio.hi.ui.title.QTitleBar
+            android:id="@+id/search_bar"
+            bind:q_icon_color="@color/black"
+            bind:q_btn_color="@color/black"
+            bind:q_the_layout="brother"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            bind:auto_topbar_height="@{true}" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_eee" />
+        <org.devio.hi.ui.recyclerview.HiRecyclerView
+            android:id="@+id/container"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/mq_round_8_white"
+        android:layout_width="match_parent"
+        android:elevation="2dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_image"
+            android:background="@drawable/mq_round_3_border_bbb_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:contentDescription="@string/about_author" />
+
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:id="@+id/item_title"
+            app:layout_constraintTop_toBottomOf="@id/item_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"
+            tools:text="借款方来得及阿夫林借款方来得及阿夫林房借款方来得及阿夫林借款方来得及阿夫林房间里的开始房间里的开始间里的开始房间里的开始"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:id="@+id/item_type"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/black60"
+            tools:text="Android"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:id="@+id/item_look"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/main_color"
+            tools:text="23"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

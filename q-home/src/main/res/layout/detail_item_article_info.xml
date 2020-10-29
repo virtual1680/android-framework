@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@string/about_author"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/main_color"
+            android:id="@+id/article_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/article_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:id="@+id/article_title"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/color_000"
+            android:text="@string/about_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:layout_marginTop="@dimen/dp_2"
+            app:layout_constraintTop_toBottomOf="@id/article_title"
+            app:layout_constraintLeft_toLeftOf="@id/article_title"
+            android:text="android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:id="@+id/article_eye"
+            android:layout_marginTop="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/article_title"
+            app:layout_constraintRight_toRightOf="@id/article_title"
+            android:text="123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+<!--        <WebView-->
+<!--            android:id="@+id/webview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/article_eye"-->
+<!--            />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

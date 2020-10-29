@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="xfcy/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/commom/commom.iml" filepath="$PROJECT_DIR$/.idea/modules/commom/commom.iml" group="xfcy/commom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/933121789/hi-library.iml" filepath="$PROJECT_DIR$/.idea/modules/933121789/hi-library.iml" group="xfcy/hi-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-889784985/hi-ui.iml" filepath="$PROJECT_DIR$/.idea/modules/-889784985/hi-ui.iml" group="xfcy/hi-ui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/q-home/q-home.iml" filepath="$PROJECT_DIR$/.idea/modules/q-home/q-home.iml" group="xfcy/q-home" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/resource/resource.iml" filepath="$PROJECT_DIR$/.idea/modules/resource/resource.iml" group="xfcy/resource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/xfcy.iml" filepath="$PROJECT_DIR$/.idea/modules/xfcy.iml" group="xfcy" />
+    </modules>
+  </component>
+</project>

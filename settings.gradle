@@ -1,0 +1,10 @@
+include ':resource'
+include ':q-home'
+include ':commom'
+include ':app'
+rootProject.name = "xfcy"
+
+include ':hi-library'
+project(':hi-library').projectDir = "../hi-library/hilibrary" as File
+include ':hi-ui'
+project(':hi-ui').projectDir = "../hi-ui/hiui" as File

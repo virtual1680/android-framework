@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            tools:src="@color/colorAccent"
+            android:contentDescription="@string/about_author" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:singleLine="true"
+            android:textColor="@color/color_4a4"
+            android:textSize="@dimen/sp_12"
+            tools:text="天天领现金" />
+    </LinearLayout>
+</layout>

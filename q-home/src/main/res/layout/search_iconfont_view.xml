@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.devio.hi.ui.icfont.IconFontTextView
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/shape_home_search"
+        android:text="@string/home_search_hint"
+        android:gravity="center"
+        android:textColor="@color/color_9fa"
+        android:textSize="14sp" />
+</LinearLayout>
+

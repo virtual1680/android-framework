@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    bind:ignore="NamespaceTypo">
+    <data>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <org.devio.hi.ui.recyclerview.HiRecyclerView
+            android:id="@+id/hi_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <org.devio.hi.ui.empty.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <org.devio.hi.ui.title.QTitleBar
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/nav_bar"
+            style="@style/titleBarStyle"
+            app:q_background_color="@color/main_color"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            bind:auto_topbar_height="@{true}"/>
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/content_loading"
+            style="@style/Widget.AppCompat.ProgressBar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/color_999"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

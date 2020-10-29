@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/key_title"
+            android:paddingVertical="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold"
+            android:textColor="@color/color_000"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <org.devio.hi.ui.icfont.IconFontTextView
+            android:id="@+id/key_icon"
+            app:layout_constraintTop_toTopOf="@+id/key_title"
+            app:layout_constraintBottom_toBottomOf="@id/key_title"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/black45" />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/key_chip_group"
+            app:layout_constraintTop_toBottomOf="@id/key_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            app:chipSpacingHorizontal="@dimen/dp_10"
+            app:chipSpacingVertical="@dimen/dp_10"
+            app:singleLine="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
